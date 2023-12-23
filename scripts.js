@@ -12,7 +12,6 @@ function getComputerChoice() {
 }
 
 
-
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase()
     if (playerSelection === "rock" && computerSelection === "paper") {
@@ -22,8 +21,22 @@ function playRound(playerSelection, computerSelection) {
     }   else if (playerSelection === computerSelection) 
             return("You tied try again? ")
 }
+
 const playerSelection = "rock"
 const computerSelection = getComputerChoice()
-console.log(computerSelection)
+
 console.log(playRound(playerSelection,computerSelection))
+
+const result = playRound(playerSelection, computerSelection)
+function counter() {
+    let compScore = 0
+    let playerscore = 0
+    
+
+    
+}
+
+
+
+        
 
