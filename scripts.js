@@ -28,13 +28,10 @@ const computerSelection = getComputerChoice()
 console.log(playRound(playerSelection,computerSelection))
 
 const result = playRound(playerSelection, computerSelection)
-function counter() {
-    let compScore = 0
-    let playerscore = 0
-    
 
-    
-}
+
+console.log(counter)
+
 
 
 
