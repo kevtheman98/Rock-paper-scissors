@@ -12,25 +12,60 @@ function getComputerChoice() {
 }
 
 
-function playRound(playerSelection, computerSelection) {
-    playerSelection = playerSelection.toLowerCase()
-    if (playerSelection === "rock" && computerSelection === "paper") {
-        return("You lost")
-    }   else if (playerSelection === "rock" && computerSelection === "scissors") {
-            return("You won")
-    }   else if (playerSelection === computerSelection) 
-            return("You tied try again? ")
-}
+    
+function game() {
+    
+    
+    function playRound(playerSelection, computerSelection) {
+        
+        console.log(playerSelection)
+        console.log(computerSelection)
+        
+        
+        
+        if (playerSelection === "rock" && computerSelection === "paper") {
+                console.log("You lost rock loses to paper")
+                return("loss")
+        }
+        if (playerSelection === "rock" && computerSelection === "scissors") {
+                    console.log("You won rock beats sissors")
+                    return("win")
+        }
+        if (playerSelection === computerSelection)  {
+                    console.log("You tied try again? ")
+                    return("tie")
+        }
+    }
+    playRound(playerSelection, computerSelection)
+    
+    let computerCounter = 0
+    if (playRound == "loss" && (playerSelection && computerSelection <=5 )) {
+        computerCounter + 1
+        console.log("Computer score: " + computerCounter)
+    }
+    if (playRound == "win" && (playerSelection && computerSelection <=5)) {
+        playerCounter + 1
+        console.log("Player score: " + playerCounter)
 
+    }
+    
+}
 const playerSelection = "rock"
+/* playerSelection = playerSelection.toLowerCase() */
 const computerSelection = getComputerChoice()
 
-console.log(playRound(playerSelection,computerSelection))
 
-const result = playRound(playerSelection, computerSelection)
+                
+game()
+
+            
 
 
-console.log(counter)
+
+
+
+
+
 
 
 
