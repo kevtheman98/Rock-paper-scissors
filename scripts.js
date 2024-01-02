@@ -53,10 +53,11 @@ function playRound(userinput, computerScore) {
     }
 }
 
-let playerPoints = 0
-let computerPoints = 0
 
 function game() {
+    let playerPoints = 0
+    let computerPoints = 0
+
     
     for(let i = 0; i < 5; i++) {
         
